@@ -2,8 +2,11 @@ import { getPages } from "@/api/pagesServices";
 import PageBanner from "@/components/sections/PageBanner";
 import PagesSkeleton from "@/components/skeletons/PagesSkeleton";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 const Policy = () => {
+  const { t } = useTranslation();
+
   const { data: page, isLoading } = useQuery({
     queryKey: ["page", "privacy_policy"],
     queryFn: () => getPages("privacy_policy"),
@@ -11,7 +14,7 @@ const Policy = () => {
 
   return (
     <main>
-      <PageBanner title={"سياسة الخصوصية"} />
+      <PageBanner title={t("policy.title")} />
 
       {isLoading ? (
         <PagesSkeleton />

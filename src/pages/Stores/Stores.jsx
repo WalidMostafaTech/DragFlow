@@ -5,12 +5,17 @@ import { getStores } from "@/api/pagesServices";
 import StoresSkeleton from "@/components/skeletons/StoresSkeleton";
 import EmptyDataSection from "@/components/sections/EmptyDataSection";
 import SeoManager from "@/utils/SeoManager";
+import { useTranslation } from "react-i18next";
 
 const Stores = () => {
+  const { t } = useTranslation();
+
   const { data: storesData, isLoading } = useQuery({
     queryKey: ["stores"],
     queryFn: getStores,
   });
+
+  const isEmpty = !storesData || storesData?.items?.length === 0;
 
   const seo = storesData?.meta?.seo;
 
@@ -25,13 +30,13 @@ const Stores = () => {
       />
 
       <main>
-        <PageBanner title={"Stores.title"} />
+        <PageBanner title={t("stores.title")} />
 
         <section className="container pagePadding">
           {isLoading ? (
             <StoresSkeleton />
-          ) : storesData.length === 0 ? (
-            <EmptyDataSection msg={"Stores.noStores"} />
+          ) : isEmpty ? (
+            <EmptyDataSection msg={t("stores.empty")} />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {storesData?.items.map((item) => (

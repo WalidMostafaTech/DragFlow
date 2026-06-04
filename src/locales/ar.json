@@ -3,6 +3,7 @@
   "read_more": "إقرأ المزيد",
   "terms_of_service": "الشروط والأحكام",
   "privacy_policy": "سياسة الخصوصية",
+  "noDataFound": "لا توجد بيانات",
 
   "Header": {
     "home": "الرئيسية",
@@ -11,6 +12,11 @@
     "blog": "المدونة",
     "contact": "تواصل معنا",
     "download": "تحميل التطبيق"
+  },
+
+  "downloadModal": {
+    "title": "حمّل تطبيق DrugFlow الآن",
+    "description": "اطلب احتياجات صيدليتك من المخازن المعتمدة بسهولة وسرعة عبر تطبيق واحد"
   },
 
   "ContactUS": {
@@ -56,6 +62,24 @@
   "blog": {
     "title": "المدونة",
     "empty": "لا يوجد مدونات حاليا"
+  },
+
+  "blogDetails": {
+    "shareArticle": "مشاركة المقال :",
+    "copied": "تم النسخ"
+  },
+
+  "policy": {
+    "title": "سياسة الخصوصية"
+  },
+
+  "terms": {
+    "title": "الشروط والأحكام"
+  },
+
+  "stores": {
+    "title": "المخازن",
+    "empty": "لا يوجد مخازن حاليا"
   },
 
   "notFound": {

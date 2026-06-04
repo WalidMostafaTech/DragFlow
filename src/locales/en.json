@@ -3,6 +3,7 @@
   "read_more": "Read More",
   "terms_of_service": "Terms And Condition",
   "privacy_policy": "Privacy Policy",
+  "noDataFound": "No Data Found",
 
   "Header": {
     "home": "Home",
@@ -11,6 +12,11 @@
     "blog": "Blog",
     "contact": "Contact Us",
     "download": "Download App"
+  },
+
+  "downloadModal": {
+    "title": "Download DrugFlow App Now",
+    "description": "Order your pharmacy needs from trusted stores quickly and easily through one app"
   },
 
   "ContactUS": {
@@ -56,6 +62,24 @@
   "blog": {
     "title": "Blog",
     "empty": "No blogs available"
+  },
+
+  "blogDetails": {
+    "shareArticle": "Share Article:",
+    "copied": "Copied"
+  },
+
+  "policy": {
+    "title": "Privacy Policy"
+  },
+
+  "terms": {
+    "title": "Terms & Conditions"
+  },
+
+  "stores": {
+    "title": "Stores",
+    "empty": "No stores available at the moment"
   },
 
   "ErrorPage": {

@@ -15,8 +15,9 @@ const Blog = () => {
     queryFn: getBlogs,
   });
 
+  const isEmpty = !blogsData || blogsData?.items?.length === 0;
+
   const seo = blogsData?.meta?.seo;
-  const items = blogsData?.items || [];
 
   return (
     <>
@@ -34,11 +35,11 @@ const Blog = () => {
         <section className="container pagePadding">
           {isLoading ? (
             <BlogsSkeleton />
-          ) : items.length === 0 ? (
+          ) : isEmpty ? (
             <EmptyDataSection msg={t("blog.empty")} />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {items.map((item) => (
+              {blogsData?.items.map((item) => (
                 <BlogCard key={item.id} item={item} />
               ))}
             </div>

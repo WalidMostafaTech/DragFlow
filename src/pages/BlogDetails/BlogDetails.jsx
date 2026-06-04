@@ -10,9 +10,12 @@ import { getBlogDetails } from "@/api/pagesServices";
 import { useQuery } from "@tanstack/react-query";
 import BlogDetailsSkeleton from "@/components/skeletons/BlogDetailsSkeleton";
 import SeoManager from "@/utils/SeoManager";
+import { useTranslation } from "react-i18next";
 
 const BlogDetails = () => {
   const { slug } = useParams();
+  const { t } = useTranslation();
+
   const [copied, setCopied] = useState(false);
 
   const { data: blogDetails, isLoading } = useQuery({
@@ -51,17 +54,17 @@ const BlogDetails = () => {
           </h2>
 
           <div
-            className="rich_content"
+            className="rich_content text-start!"
             dangerouslySetInnerHTML={{ __html: blogDetails?.content }}
           />
 
           <div className="bg-white rounded-xl p-3 max-w-lg mx-auto border border-primary">
             <div className="flex items-center justify-center gap-4">
-              <p>مشاركة المقال :</p>
+              <p>{t("blogDetails.shareArticle")}</p>
 
               <div className="flex items-center gap-2">
                 <span
-                  className="w-10 md:w-14 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
+                  className="w-10 md:w-12 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
                   onClick={() =>
                     window.open(
                       `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
@@ -78,7 +81,7 @@ const BlogDetails = () => {
                 </span>
 
                 <span
-                  className="w-10 md:w-14 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
+                  className="w-10 md:w-12 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
                   onClick={() =>
                     window.open(
                       `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
@@ -95,7 +98,7 @@ const BlogDetails = () => {
                 </span>
 
                 <span
-                  className="w-10 md:w-14 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
+                  className="w-10 md:w-12 aspect-square rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
                   onClick={() =>
                     window.open(
                       `https://twitter.com/intent/tweet?url=${encodeURIComponent(
@@ -109,7 +112,7 @@ const BlogDetails = () => {
                 </span>
 
                 <span
-                  className="w-10 md:w-14 aspect-square bg-primary text-white text-2xl md:text-3xl rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
+                  className="w-10 md:w-12 aspect-square bg-primary text-white text-2xl md:text-3xl rounded-full flex items-center justify-center cursor-pointer hover:brightness-80 transition overflow-hidden"
                   onClick={() => {
                     navigator.clipboard.writeText(window.location.href);
                     setCopied(true); // غيرنا الحالة للنسخ
@@ -126,7 +129,8 @@ const BlogDetails = () => {
                 copied ? "h-6 mt-4" : "h-0 mt-0"
               } duration-300 overflow-hidden`}
             >
-              تم النسخ <IoMdDoneAll className="text-3xl" />
+              {t("blogDetails.copied")}
+              <IoMdDoneAll className="text-3xl" />
             </p>
           </div>
         </section>
