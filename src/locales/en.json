@@ -1,0 +1,73 @@
+{
+  "loading": "Loading...",
+  "read_more": "Read More",
+  "terms_of_service": "Terms And Condition",
+  "privacy_policy": "Privacy Policy",
+
+  "Header": {
+    "home": "Home",
+    "about": "About Us",
+    "stores": "Stores",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "download": "Download App"
+  },
+
+  "ContactUS": {
+    "title": "Contact Us",
+    "desc": "Hello, We Are Here To Help You.",
+    "whatsapp": "Whatsapp",
+    "phone": "Phone",
+    "email": "Email"
+  },
+
+  "ContactForm": {
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "nameRequired": "Name is required",
+    "company": "Company Name",
+    "companyPlaceholder": "Enter your company name",
+    "companyRequired": "Company name is required",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "invalidEmail": "Invalid email address",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "invalidPhone": "Invalid phone number",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message",
+    "messageMin": "Message must be at least 5 characters",
+    "recaptchaRequired": "Please verify that you are not a robot",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully",
+    "error": "Something went wrong, please try again"
+  },
+
+  "Faqs": {
+    "title": "FAQ"
+  },
+
+  "StoresSlider": {
+    "title": "Stores",
+    "show_more": "Show More"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "empty": "No blogs available"
+  },
+
+  "ErrorPage": {
+    "title": "An unexpected error occurred",
+    "description": "There was a problem loading the page. Please try again later.",
+    "reload": "Reload page",
+    "goHome": "Go to Home"
+  },
+
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "goHome": "Go Home"
+  }
+}

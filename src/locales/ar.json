@@ -1,0 +1,73 @@
+{
+  "loading": "جاري التحميل...",
+  "read_more": "إقرأ المزيد",
+  "terms_of_service": "الشروط والأحكام",
+  "privacy_policy": "سياسة الخصوصية",
+
+  "Header": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "stores": "المخازن",
+    "blog": "المدونة",
+    "contact": "تواصل معنا",
+    "download": "تحميل التطبيق"
+  },
+
+  "ContactUS": {
+    "title": "تواصل معنا",
+    "desc": "مرحباً! نحن هنا دائما لمساعدتك.",
+    "whatsapp": "رقم الواتساب",
+    "phone": "رقم الجوال",
+    "email": "البريد الالكتروني"
+  },
+
+  "ContactForm": {
+    "name": "الاسم",
+    "namePlaceholder": "اكتب اسمك",
+    "nameRequired": "الاسم مطلوب",
+    "company": "اسم الشركة",
+    "companyPlaceholder": "اكتب اسم الشركة",
+    "companyRequired": "اسم الشركة مطلوب",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "اكتب البريد الإلكتروني",
+    "invalidEmail": "البريد الإلكتروني غير صحيح",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "اكتب رقم الهاتف",
+    "invalidPhone": "رقم الهاتف غير صحيح",
+    "message": "الرسالة",
+    "messagePlaceholder": "اكتب رسالتك",
+    "messageMin": "الرسالة يجب أن تكون 5 أحرف على الأقل",
+    "recaptchaRequired": "يرجى تأكيد أنك لست روبوت",
+    "send": "إرسال",
+    "sending": "جاري الإرسال...",
+    "success": "تم إرسال الرسالة بنجاح",
+    "error": "حدث خطأ ما، حاول مرة أخرى"
+  },
+
+  "Faqs": {
+    "title": "الأسئلة الشائعة"
+  },
+
+  "StoresSlider": {
+    "title": "المخازن",
+    "show_more": "رؤية المزيد"
+  },
+
+  "blog": {
+    "title": "المدونة",
+    "empty": "لا يوجد مدونات حاليا"
+  },
+
+  "notFound": {
+    "title": "404",
+    "subtitle": "الصفحة غير موجودة",
+    "goHome": "العودة للرئيسية"
+  },
+
+  "ErrorPage": {
+    "title": "حدث خطأ غير متوقع",
+    "description": "حدثت مشكلة أثناء تحميل الصفحة، برجاء المحاولة مرة أخرى",
+    "reload": "إعادة تحميل الصفحة",
+    "goHome": "العودة للرئيسية"
+  }
+}
